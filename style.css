@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 /*---Button Outline Fix --*/
-button {
+button:focus {
   outline: none;
 }
 
