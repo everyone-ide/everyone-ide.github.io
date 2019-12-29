@@ -10,3 +10,6 @@ function aboutScroll(){
 function teamScroll(){
   document.getElementById('team').scrollIntoView({behavior: 'smooth'});
 }
+function connectScroll(){
+  document.getElementById('connect').scrollIntoView({behavior: 'smooth'});
+}
