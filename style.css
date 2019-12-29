@@ -93,11 +93,6 @@ footer {
   padding-top: 2rem;
 }
 
-.card-img-top {
-  width: 50%;
-  height: 50%;
-}
-
 /*---Button Outline Fix --*/
 button:focus {
   outline: none;
