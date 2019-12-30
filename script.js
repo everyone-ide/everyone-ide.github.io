@@ -1,3 +1,7 @@
+var li1 = document.getElementById("li1");
+var li2 = document.getElementById("li2");
+var li3 = document.getElementById("li3");
+
 function benefitsScroll(){
   document.getElementById('benefits').scrollIntoView({behavior: 'smooth'});
 }
@@ -15,4 +19,7 @@ function connectScroll(){
 }
 function newsScroll(){
   document.getElementById('news').scrollIntoView({behavior: 'smooth'});
+}
+function makeActiveNav(li){
+  li.classList.add("active");
 }
