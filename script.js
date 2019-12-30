@@ -13,3 +13,6 @@ function teamScroll(){
 function connectScroll(){
   document.getElementById('connect').scrollIntoView({behavior: 'smooth'});
 }
+function newsScroll(){
+  document.getElementById('news').scrollIntoView({behavior: 'smooth'});
+}
