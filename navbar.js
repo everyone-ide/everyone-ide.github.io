@@ -32,3 +32,14 @@ li3_a.href = "https://everyone-ide.github.io/news";
 ul.appendChild(li3);
 var li3 = document.getElementById("li3");
 li3.appendChild(li3_a);
+
+var li4 = document.createElement("LI");
+var li4_a = document.createElement("A");
+li4.id = "li4";
+li4_a.innerHTML = "Chat";
+li4.classList.add("nav-item");
+li4_a.classList.add("nav-link");
+li4_a.href = "https://everyone-ide.github.io/chat";
+ul.appendChild(li4);
+var li4 = document.getElementById("li4");
+li4.appendChild(li4_a);
