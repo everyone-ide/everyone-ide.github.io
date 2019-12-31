@@ -4,7 +4,7 @@ var i = document.createElement("I");
 i.id = "status-i";
 i.classList.add("fas");
 i.classList.add("fa-ban");
-i.style = "width: 15px; height: 15px; color: red;";
+i.style = "width: 50px; height: 50px; color: red;";
 div.appendChild(i);
 
 // fas fa-ban - No status available. - red
