@@ -1,5 +1,10 @@
 var div = document.getElementById("status-div");
 
+var hr = document.createElement("HR");
+hr.id = "status-hr";
+hr.classList.add("my-4");
+div.appendChild(hr);
+
 var i = document.createElement("I");
 i.id = "status-i";
 i.classList.add("fas");
@@ -17,10 +22,10 @@ p.classList.add("lead");
 p.innerHTML = "No status available.";
 div.appendChild(p);
 
-var hr = document.createElement("HR");
-hr.id = "status-hr"
-hr.classList.add("my-4")
-div.appendChild(hr);
+var hr2 = document.createElement("HR");
+hr2.id = "status-hr2";
+hr2.classList.add("my-4");
+div.appendChild(hr2);
 
 var p2 = document.createElement("P");
 p2.id = "status-p2"
@@ -28,3 +33,8 @@ p2.classList.add("lead");
 p2.style = "color: #737373;";
 p2.innerHTML = "No developer is currently doing something.";
 div.appendChild(p2);
+
+var hr3 = document.createElement("HR");
+hr3.id = "status-hr3"
+hr3.classList.add("my-4");
+hr3.appendChild(hr3);
