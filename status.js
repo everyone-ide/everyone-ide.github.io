@@ -1,9 +1,9 @@
 var div = document.getElementById("status-div");
 
 var i = document.createElement("I");
-i.id = "status-i"
-i.classList.add("fas fa-ban")
-i.style = "width: 15px; height: 15px; color: red;"
+i.id = "status-i";
+i.classList.add("fas fa-ban");
+i.style = "width: 15px; height: 15px; color: red;";
 div.appendChild(i);
 
 // fas fa-ban - No status available. - red
