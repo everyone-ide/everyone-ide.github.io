@@ -76,3 +76,14 @@ li7_a.href = "https://everyone-ide.github.io/privacy";
 ul.appendChild(li7);
 var li7 = document.getElementById("li7");
 li7.appendChild(li7_a);
+
+var li8 = document.createElement("LI");
+var li8_a = document.createElement("A");
+li8.id = "li8";
+li8_a.innerHTML = "Dev Status";
+li8.classList.add("nav-item");
+li8_a.classList.add("nav-link");
+li8_a.href = "https://everyone-ide.github.io/status";
+ul.appendChild(li8);
+var li8 = document.getElementById("li8");
+li8.appendChild(li8_a);
