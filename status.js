@@ -2,7 +2,8 @@ var div = document.getElementById("status-div");
 
 var i = document.createElement("I");
 i.id = "status-i";
-i.classList.add("fas fa-ban");
+i.classList.add("fas");
+i.classList.add("fa-ban");
 i.style = "width: 15px; height: 15px; color: red;";
 div.appendChild(i);
 
