@@ -16,3 +16,15 @@ p.id = "status-p";
 p.classList.add("lead");
 p.innerHTML = "No status available.";
 div.appendChild(p);
+
+var hr = document.createElement("HR");
+hr.id = "status-hr"
+hr.classList.add("my-4")
+div.appendChild(hr);
+
+var p2 = document.createElement("P");
+p2.id = "status-p2"
+p2.classList.add("lead");
+p2.style = "color: #737373;";
+p2.innerHTML = "No developer is currently doing something.";
+div.appendChild(p2);
