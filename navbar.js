@@ -68,7 +68,7 @@ li6.appendChild(li6_a);
 
 var li7 = document.createElement("LI");
 var li7_a = document.createElement("A");
-li7.id = "li5";
+li7.id = "li7";
 li7_a.innerHTML = "Privacy Policy";
 li7.classList.add("nav-item");
 li7_a.classList.add("nav-link");
