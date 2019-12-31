@@ -5,6 +5,7 @@ var li4 = document.getElementById("li4");
 var li5 = document.getElementById("li5");
 var li6 = document.getElementById("li6");
 var li7 = document.getElementById("li7");
+var li8 = document.getElementById("li8");
 
 function benefitsScroll(){
   document.getElementById('benefits').scrollIntoView({behavior: 'smooth'});
