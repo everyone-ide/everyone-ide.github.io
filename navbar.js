@@ -43,3 +43,36 @@ li4_a.href = "https://everyone-ide.github.io/chat";
 ul.appendChild(li4);
 var li4 = document.getElementById("li4");
 li4.appendChild(li4_a);
+
+var li5 = document.createElement("LI");
+var li5_a = document.createElement("A");
+li5.id = "li5";
+li5_a.innerHTML = "Contact";
+li5.classList.add("nav-item");
+li5_a.classList.add("nav-link");
+li5_a.href = "https://everyone-ide.github.io/contact";
+ul.appendChild(li5);
+var li5 = document.getElementById("li5");
+li5.appendChild(li5_a);
+
+var li6 = document.createElement("LI");
+var li6_a = document.createElement("A");
+li6.id = "li6";
+li6_a.innerHTML = "Terms of Service";
+li6.classList.add("nav-item");
+li6_a.classList.add("nav-link");
+li6_a.href = "https://everyone-ide.github.io/tos";
+ul.appendChild(li6);
+var li6 = document.getElementById("li6");
+li6.appendChild(li6_a);
+
+var li7 = document.createElement("LI");
+var li7_a = document.createElement("A");
+li7.id = "li5";
+li7_a.innerHTML = "Privacy Policy";
+li7.classList.add("nav-item");
+li7_a.classList.add("nav-link");
+li7_a.href = "https://everyone-ide.github.io/privacy";
+ul.appendChild(li7);
+var li7 = document.getElementById("li7");
+li7.appendChild(li7_a);
