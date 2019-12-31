@@ -37,4 +37,4 @@ div.appendChild(p2);
 var hr3 = document.createElement("HR");
 hr3.id = "status-hr3"
 hr3.classList.add("my-4");
-hr3.appendChild(hr3);
+div.appendChild(hr3);
