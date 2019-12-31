@@ -101,6 +101,10 @@ footer {
   transform: scale(1.1);
 }
 
+.active {
+  border-bottom: 5px solid #000;
+}
+
 /*---Button Outline Fix --*/
 button:focus {
   outline: none;
