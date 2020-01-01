@@ -107,10 +107,14 @@ footer {
   border-bottom: 3px solid #000;
 }
 
-.popup {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+.popup-box {
+  position:relative;
+}
+
+.popup-text {
+  position:absolute;
+  bottom:0;
+  right:0;
 }
 
 /*---Button Outline Fix --*/
