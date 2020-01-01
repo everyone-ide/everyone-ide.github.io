@@ -8,8 +8,8 @@ div.appendChild(hr);
 var i = document.createElement("I");
 i.id = "status-i";
 i.classList.add("fas");
-i.classList.add("fa-ban");
-i.style = "width: 50px; height: 50px; color: red;";
+i.classList.add("fa-question");
+i.style = "width: 50px; height: 50px; color: dodgerblue;";
 div.appendChild(i);
 
 // fas fa-ban - No status available. - red
@@ -22,7 +22,7 @@ div.appendChild(i);
 var p = document.createElement("P");
 p.id = "status-p";
 p.classList.add("lead");
-p.innerHTML = "No status available.";
+p.innerHTML = "Other.";
 div.appendChild(p);
 
 var hr2 = document.createElement("HR");
@@ -55,7 +55,7 @@ var p3 = document.createElement("P");
 p3.id = "status-p3";
 p3.classList.add("lead");
 p3.style = "color: #737373;";
-p3.innerHTML = "Both developers doing nothing.";
+p3.innerHTML = "The CEO is modifying the Discord part of the ToS a bit.";
 div.appendChild(p3);
 
 var hr6 = document.createElement("HR");
