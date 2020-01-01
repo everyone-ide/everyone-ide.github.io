@@ -109,8 +109,8 @@ footer {
 
 .popup {
   position: fixed;
-  bottom: 0;
-  right: 25;
+  bottom: 50;
+  right: 50;
 }
 
 /*---Button Outline Fix --*/
