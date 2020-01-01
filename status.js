@@ -8,12 +8,12 @@ div.appendChild(hr);
 var i = document.createElement("I");
 i.id = "status-i";
 i.classList.add("fas");
-i.classList.add("fa-laptop-code");
-i.style = "width: 50px; height: 50px; color: lightblue;";
+i.classList.add("fa-plus");
+i.style = "width: 50px; height: 50px; color: lime;";
 div.appendChild(i);
 
 // fas fa-ban - No status available. - red
-// fas fa-laptop-code - Adding new feature. - lightblue
+// fas fa-laptop-code - Adding new feature. - lime
 // fas fa-bug - Fixing bugs. - green
 
 var p = document.createElement("P");
