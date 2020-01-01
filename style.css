@@ -126,6 +126,7 @@ footer {
   width: 125;
   text-align: center;
   height: 25;
+  display: none;
 }
 
 /*---Button Outline Fix --*/
