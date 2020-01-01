@@ -37,6 +37,7 @@ p2.id = "status-p2";
 p2.classList.add("lead");
 p2.innerHTML = "Technical";
 div.appendChild(p2);
+div.appendChild(p2);
 
 var hr4 = document.createElement("HR");
 hr4.id = "status-hr4";
