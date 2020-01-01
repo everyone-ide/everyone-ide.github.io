@@ -8,8 +8,8 @@ div.appendChild(hr);
 var i = document.createElement("I");
 i.id = "status-i";
 i.classList.add("fas");
-i.classList.add("fa-bug");
-i.style = "width: 50px; height: 50px; color: green;";
+i.classList.add("fa-plus");
+i.style = "width: 50px; height: 50px; color: lime;";
 div.appendChild(i);
 
 // fas fa-ban - No status available. - red
@@ -19,7 +19,7 @@ div.appendChild(i);
 var p = document.createElement("P");
 p.id = "status-p";
 p.classList.add("lead");
-p.innerHTML = "Fixing bugs.";
+p.innerHTML = "Adding new feature.";
 div.appendChild(p);
 
 var hr2 = document.createElement("HR");
@@ -52,7 +52,7 @@ var p3 = document.createElement("P");
 p3.id = "status-p3";
 p3.classList.add("lead");
 p3.style = "color: #737373;";
-p3.innerHTML = "The CEO is fixing the bug in generating statuses with the textarea where (a) 4 spaces are there (b) you can edit the text";
+p3.innerHTML = "The CEO is adding to the status generator to be able to copy the cody with a button";
 div.appendChild(p3);
 
 var hr6 = document.createElement("HR");
