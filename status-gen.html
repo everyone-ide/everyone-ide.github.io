@@ -57,6 +57,10 @@
             <br>
             <input type="radio" name="mode" value="bug" id="mode_bug">Fixing bugs.
             <br>
+						<input type="radio" name="mode" value="rem" id="mode_rem">Removing feature.
+						<br>
+						<input type="radio" name="mode" value="write" id="mode_write">Writing article.
+						<br>
             <p class="lead">Level: (Eg. Technical, use '-' if no status available)</p>
             <input type="text" name="level" placeholder="Eg. Technical, use '-' if no status available" id="level">
             <br>
@@ -98,6 +102,8 @@ Your code will be generated right here.
   mode_none = document.getElementById("mode_none");
   mode_add = document.getElementById("mode_add");
   mode_bug = document.getElementById("mode_bug");
+	mode_rem = document.getElementById("mode_rem");
+	mode_write = document.getElementById("mode_write");
   level = document.getElementById("level");
   status = document.getElementById("status");
   generated = document.getElementById("generated");
@@ -128,8 +134,18 @@ Your code will be generated right here.
       mode_icon = "bug";
       mode_color = "green";
     }
+		if (mode_rem.checked) {
+			mode_val = "Removing feature.";
+			mode_icon = "minus";
+			mode_color = "red";
+		}
+		if (mode_write.checked) {
+			mode_val = "Writing article.";
+			mode_icon = "edit";
+			mode_color = "orange";
+		}
     
-    generated.innerHTML = 'var div = document.getElementById("status-div");\n\nvar hr = document.createElement("HR");\nhr.id = "status-hr";\nhr.classList.add("my-4");\ndiv.appendChild(hr);\n\nvar i = document.createElement("I");\ni.id = "status-i";\ni.classList.add("fas");\ni.classList.add("fa-' + mode_icon + '");\ni.style = "width: 50px; height: 50px; color: ' + mode_color + ';";\ndiv.appendChild(i);\n\n// fas fa-ban - No status available. - red\n// fas fa-laptop-code - Adding new feature. - lime\n// fas fa-bug - Fixing bugs. - green\n\nvar p = document.createElement("P");\np.id = "status-p";\np.classList.add("lead");\np.innerHTML = "' + mode_val + '";\ndiv.appendChild(p);\n\nvar hr2 = document.createElement("HR");\nhr2.id = "status-hr2";\nhr2.classList.add("my-4");\ndiv.appendChild(hr2);\n\nvar hr3 = document.createElement("HR");\nhr3.id = "status-hr3";\nhr3.classList.add("my-4");\ndiv.appendChild(hr3);\n\nvar p2 = document.createElement("P");\np2.id = "status-p2";\np2.classList.add("lead");\np2.innerHTML = "' + level_val + '";\ndiv.appendChild(p2);\n\nvar hr4 = document.createElement("HR");\nhr4.id = "status-hr4";\nhr4.classList.add("my-4");\ndiv.appendChild(hr4);\n\nvar hr5 = document.createElement("HR");\nhr5.id = "status-hr5";\nhr5.classList.add("my-4");\ndiv.appendChild(hr5);\n\nvar p3 = document.createElement("P");\np3.id = "status-p3";\np3.classList.add("lead");\np3.style = "color: #737373;";\np3.innerHTML = "' + document.getElementById("status").value + '";\ndiv.appendChild(p3);\n\nvar hr6 = document.createElement("HR");\nhr6.id = "status-hr6";\nhr6.classList.add("my-4");\ndiv.appendChild(hr6);';
+    generated.innerHTML = 'var div = document.getElementById("status-div");\n\nvar hr = document.createElement("HR");\nhr.id = "status-hr";\nhr.classList.add("my-4");\ndiv.appendChild(hr);\n\nvar i = document.createElement("I");\ni.id = "status-i";\ni.classList.add("fas");\ni.classList.add("fa-' + mode_icon + '");\ni.style = "width: 50px; height: 50px; color: ' + mode_color + ';";\ndiv.appendChild(i);\n\n// fas fa-ban - No status available. - red\n// fas fa-laptop-code - Adding new feature. - lime\n// fas fa-bug - Fixing bugs. - green\n// fas fa-minus - Removing feature. - red\n// fas fa-edit - Writing article. - orange\n\nvar p = document.createElement("P");\np.id = "status-p";\np.classList.add("lead");\np.innerHTML = "' + mode_val + '";\ndiv.appendChild(p);\n\nvar hr2 = document.createElement("HR");\nhr2.id = "status-hr2";\nhr2.classList.add("my-4");\ndiv.appendChild(hr2);\n\nvar hr3 = document.createElement("HR");\nhr3.id = "status-hr3";\nhr3.classList.add("my-4");\ndiv.appendChild(hr3);\n\nvar p2 = document.createElement("P");\np2.id = "status-p2";\np2.classList.add("lead");\np2.innerHTML = "' + level_val + '";\ndiv.appendChild(p2);\n\nvar hr4 = document.createElement("HR");\nhr4.id = "status-hr4";\nhr4.classList.add("my-4");\ndiv.appendChild(hr4);\n\nvar hr5 = document.createElement("HR");\nhr5.id = "status-hr5";\nhr5.classList.add("my-4");\ndiv.appendChild(hr5);\n\nvar p3 = document.createElement("P");\np3.id = "status-p3";\np3.classList.add("lead");\np3.style = "color: #737373;";\np3.innerHTML = "' + document.getElementById("status").value + '";\ndiv.appendChild(p3);\n\nvar hr6 = document.createElement("HR");\nhr6.id = "status-hr6";\nhr6.classList.add("my-4");\ndiv.appendChild(hr6);';
   	alert("Generated!");
   }
 </script>
