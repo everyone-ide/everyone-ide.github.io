@@ -1,1 +1,124 @@
+<html>
+  <head>
+    <title>Everyone IDE - Status Generator</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="Everyone IDE - A piece of software to make software for everyone to use">
+    <meta name="keywords" content="everyone,ide,coding,programming,code,program,software,download,informatics,ict,it">
+    <meta name="author" content="Everyone IDE - Download">
+    <meta property="og:image" content="https://everyone-ide.github.io/Everyone%20IDE%20Pictogram.png">
+    <meta name="theme-color" content="#39ff14">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+	  <script type="text/javascript" src="https://everyone-ide.github.io/script.js"></script>
+  </head>
+  <body>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://everyone-ide.github.io"><img src="https://everyone-ide.github.io/Everyone%20IDE%20Pictogram%20Black.png" width="75px" height="75px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <script type="text/javascript" src="https://everyone-ide.github.io/navbar.js"></script>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+		<!--- Title -->
+		<div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Status Generator</h1>
+        </div>
+        <hr>
+      </div>
+    </div>
+		
+    <!--- Three Column Section -->
+    <div class="container-fluid padding" id="about">
+      <div class="row text-center padding">
+        <div class="col-12" id="status-div">
+          <form>
+            <p class="lead">Mode:</p>
+            <input type="radio" name="mode" value="none" id="mode_none">No status available.
+            <br>
+            <input type="radio" name="mode" value="add" id="mode_add">Adding new feature.
+            <br>
+            <input type="radio" name="mode" value="bug" id="mode_bug">Fixing bugs.
+            <br>
+            <p class="lead">Level: (Eg. Technical)</p>
+            <input type="text" name="level" value="Eg. Technical" id="level">
+            <br>
+            <p class="lead">Status text:</p>
+            <input type="text" name="status" value="Status text" id="status">
+            <br>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg">Generate</button>
+          </form>
+          <textarea rows="63" cols="75" id="generated">
+          Your code will be generated right here.
+          </textarea>
+        </div>
+      </div>
+    </div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+
+    <!--- Footer -->
+		<footer>
+			<div class="container-fluid padding">
+				<div class="row text-center">
+					<div class="col-12">
+						<h5>&copy; Everyone IDE</h5>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+  </body>
+</html>
+<script>
+  mode_none = document.getElementById("mode_none");
+  mode_add = document.getElementById("mode_add");
+  mode_bug = document.getElementById("mode_bug");
+  level = document.getElementById("level");
+  status = document.getElementById("status");
+  generated = document.getElementById("generated");
+  
+  function generateStatus(){
+    level_val = level.value;
+    status_val = status.value;
+    
+    if (mode_none.checked) {
+      mode_val = "No status available.";
+      mode_icon = "ban";
+      mode_color = "red";
+    }
+    if (mode_add.checked) {
+      mode_val = "Adding new feature.";
+      mode_icon = "plus";
+      mode_color = "lime";
+    }
+    if (mode_bug.checked) {
+      mode_val = "Fixing bugs.";
+      mode_icon = "bug";
+      mode_icon = "green";
+    }
+    
+    generated.innerHTML = 'var div = document.getElementById("status-div");\n\nvar hr = document.createElement("HR");\nhr.id = "status-hr";\nhr.classList.add("my-4");\ndiv.appendChild(hr);\n\nvar i = document.createElement("I");\ni.id = "status-i";\ni.classList.add("fas");\ni.classList.add("fa-' + mode_icon + '");\ni.style = "width: 50px; height: 50px; color: ' + mode_color + ';";\ndiv.appendChild(i);\n\n// fas fa-ban - No status available. - red\n// fas fa-laptop-code - Adding new feature. - lime\n// fas fa-bug - Fixing bugs. - green\n\nvar p = document.createElement("P");\np.id = "status-p";\np.classList.add("lead");\np.innerHTML = "' + mode_val + '";\ndiv.appendChild(p);\n\nvar hr2 = document.createElement("HR");\nhr2.id = "status-hr2";\nhr2.classList.add("my-4");\ndiv.appendChild(hr2);\n\nvar hr3 = document.createElement("HR");\nhr3.id = "status-hr3";\nhr3.classList.add("my-4");\ndiv.appendChild(hr3);\n\nvar p2 = document.createElement("P");\np2.id = "status-p2";\np2.classList.add("lead");\np2.innerHTML = "' + level_val + '";\ndiv.appendChild(p2);\ndiv.appendChild(p2);\n\nvar hr4 = document.createElement("HR");\nhr4.id = "status-hr4";\nhr4.classList.add("my-4");\ndiv.appendChild(hr4);\n\nvar hr5 = document.createElement("HR");\nhr5.id = "status-hr5";\nhr5.classList.add("my-4");\ndiv.appendChild(hr5);\n\nvar p3 = document.createElement("P");\np3.id = "status-p3";\np3.classList.add("lead");\np3.style = "color: #737373;";\np3.innerHTML = "' + status_val + '";\ndiv.appendChild(p3);\n\nvar hr6 = document.createElement("HR");\nhr6.id = "status-hr6";\nhr6.classList.add("my-4");\ndiv.appendChild(hr6);';
+  }
+</script>
