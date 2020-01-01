@@ -8,8 +8,8 @@ div.appendChild(hr);
 var i = document.createElement("I");
 i.id = "status-i";
 i.classList.add("fas");
-i.classList.add("fa-plus");
-i.style = "width: 50px; height: 50px; color: lime;";
+i.classList.add("fa-ban");
+i.style = "width: 50px; height: 50px; color: red;";
 div.appendChild(i);
 
 // fas fa-ban - No status available. - red
@@ -19,7 +19,7 @@ div.appendChild(i);
 var p = document.createElement("P");
 p.id = "status-p";
 p.classList.add("lead");
-p.innerHTML = "Adding new feature.";
+p.innerHTML = "No status available.";
 div.appendChild(p);
 
 var hr2 = document.createElement("HR");
@@ -35,7 +35,7 @@ div.appendChild(hr3);
 var p2 = document.createElement("P");
 p2.id = "status-p2";
 p2.classList.add("lead");
-p2.innerHTML = "Details";
+p2.innerHTML = "-";
 div.appendChild(p2);
 
 var hr4 = document.createElement("HR");
@@ -52,7 +52,7 @@ var p3 = document.createElement("P");
 p3.id = "status-p3";
 p3.classList.add("lead");
 p3.style = "color: #737373;";
-p3.innerHTML = "The CEO is adding some labels on every part of the developer status page to help you knowing which each part means.";
+p3.innerHTML = "Both developers doing nothing.";
 div.appendChild(p3);
 
 var hr6 = document.createElement("HR");
