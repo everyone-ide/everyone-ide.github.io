@@ -129,6 +129,13 @@ footer {
   display: none;
 }
 
+.cross {
+  background-color: #3bbf3b;
+}
+.cross:hover {
+  cursor: pointer;
+}
+
 /*---Button Outline Fix --*/
 button:focus {
   outline: none;
