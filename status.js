@@ -49,13 +49,13 @@ hr5.classList.add("my-4");
 div.appendChild(hr5);
 
 var p3 = document.createElement("P");
-p3.id = "status-p3"
+p3.id = "status-p3";
 p3.classList.add("lead");
 p3.style = "color: #737373;";
 p3.innerHTML = "CEO adding a new script to generate code to change the status.";
 div.appendChild(p3);
 
 var hr6 = document.createElement("HR");
-hr6.id = "status-hr6"
+hr6.id = "status-hr6";
 hr6.classList.add("my-4");
 div.appendChild(hr6);
