@@ -31,7 +31,7 @@ var p2 = document.createElement("P");
 p2.id = "status-p2"
 p2.classList.add("lead");
 p2.style = "color: #737373;";
-p2.innerHTML = "The CEO is currently polishing the site with more fontawesome icons.";
+p2.innerHTML = "Both developers are doing nothing.";
 div.appendChild(p2);
 
 var hr3 = document.createElement("HR");
