@@ -35,7 +35,7 @@ div.appendChild(hr3);
 var p2 = document.createElement("P");
 p2.id = "status-p2";
 p2.classList.add("lead");
-p2.innerHTML = "Important";
+p2.innerHTML = "Technical";
 div.appendChild(p2);
 
 var hr4 = document.createElement("HR");
@@ -52,7 +52,7 @@ var p3 = document.createElement("P");
 p3.id = "status-p3";
 p3.classList.add("lead");
 p3.style = "color: #737373;";
-p3.innerHTML = "The CEO is working on changing the RSS feed to their custom email system and writing an article about it.";
+p3.innerHTML = "The CEO is adding some more modes on the dev status.";
 div.appendChild(p3);
 
 var hr6 = document.createElement("HR");
