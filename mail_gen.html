@@ -1,1 +1,94 @@
+<html>
+  <head>
+    <title>Everyone IDE - Mail Generator</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="Everyone IDE - A piece of software to make software for everyone to use">
+    <meta name="keywords" content="everyone,ide,coding,programming,code,program,software,download,informatics,ict,it">
+    <meta name="author" content="Everyone IDE - Download">
+    <meta property="og:image" content="https://everyone-ide.github.io/Everyone%20IDE%20Pictogram.png">
+    <meta name="theme-color" content="#39ff14">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+	  <script type="text/javascript" src="https://everyone-ide.github.io/script.js"></script>
+  </head>
+  <body>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://everyone-ide.github.io"><img src="https://everyone-ide.github.io/Everyone%20IDE%20Pictogram%20Black.png" width="75px" height="75px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <script type="text/javascript" src="https://everyone-ide.github.io/navbar.js"></script>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+		<!--- Title -->
+		<div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Mail Generator</h1>
+        </div>
+        <hr>
+      </div>
+    </div>
+		
+    <!--- Three Column Section -->
+    <div class="container-fluid padding" id="about">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <form>
+            <p class="lead">Article link:</p>
+            <input type="text" name="link" placeholder="https://everyone-ide.github.io/0" id="link">
+            <br>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" onclick="generateMail();">Generate</button>
+	          <button type="button" class="btn btn-primary btn-lg" onclick="copyMail();">Copy</button>
+          </form>
+          <textarea rows="30" cols="75" id="generated" readonly>Your code will be generated right here.</textarea>
+        </div>
+      </div>
+    </div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+
+    <!--- Footer -->
+		<footer>
+			<div class="container-fluid padding">
+				<div class="row text-center">
+					<div class="col-12">
+						<h5>&copy; Everyone IDE</h5>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+  </body>
+</html>
+<script>
+  makeActiveNav(li3);
+  
+  link = document.getElementById("link");
+  generated = document.getElementById("generated");
+  
+  function generateMail(){
+    console.log(localStorage.getItem("title"));
+    console.log(localStorage.getItem("description"));
+  }
+  
+</script>
