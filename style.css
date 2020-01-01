@@ -99,6 +99,8 @@ footer {
 
 .navbar-brand:hover {
   transform: scale(1.1);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .active a {
