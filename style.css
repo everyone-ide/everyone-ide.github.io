@@ -109,7 +109,7 @@ footer {
 
 .popup {
   position: fixed;
-  bottom: 25;
+  bottom: 75;
   right: 50;
   background-color: #32ff32;
   width: 200;
@@ -120,7 +120,7 @@ footer {
 
 .popup2 {
   position: fixed;
-  bottom: 25;
+  bottom: 75;
   right: 50;
   background-color: #32ff32;
   width: 125;
