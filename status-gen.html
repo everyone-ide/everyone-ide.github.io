@@ -122,6 +122,14 @@ Your code will be generated right here.
 	var popup = document.querySelector(".popup");
 	var popup2 = document.querySelector(".popup2");
 	
+	function wait(ms){
+   	var start = new Date().getTime();
+   	var end = start;
+   	while(end < start + ms) {
+     	end = new Date().getTime();
+  	}
+	}
+	
 	function closePopup(){
 		popup.style.display = "none";
 	}
@@ -134,6 +142,8 @@ Your code will be generated right here.
 		document.getElementById("generated").select()
 		document.execCommand("Copy");
 		popup2.style.display = "block";
+		wait(3000);
+		closePopup2();
 	}
   
   function generateStatus(){
@@ -174,5 +184,7 @@ Your code will be generated right here.
     
     generated.innerHTML = 'var div = document.getElementById("status-div");\n\nvar hr = document.createElement("HR");\nhr.id = "status-hr";\nhr.classList.add("my-4");\ndiv.appendChild(hr);\n\nvar i = document.createElement("I");\ni.id = "status-i";\ni.classList.add("fas");\ni.classList.add("fa-' + mode_icon + '");\ni.style = "width: 50px; height: 50px; color: ' + mode_color + ';";\ndiv.appendChild(i);\n\n// fas fa-ban - No status available. - red\n// fas fa-laptop-code - Adding new feature. - lime\n// fas fa-bug - Fixing bugs. - green\n// fas fa-minus - Removing feature. - red\n// fas fa-edit - Writing article. - orange\n// fas fa-question - Other. - dodgerblue\n\nvar p = document.createElement("P");\np.id = "status-p";\np.classList.add("lead");\np.innerHTML = "' + mode_val + '";\ndiv.appendChild(p);\n\nvar hr2 = document.createElement("HR");\nhr2.id = "status-hr2";\nhr2.classList.add("my-4");\ndiv.appendChild(hr2);\n\nvar hr3 = document.createElement("HR");\nhr3.id = "status-hr3";\nhr3.classList.add("my-4");\ndiv.appendChild(hr3);\n\nvar p2 = document.createElement("P");\np2.id = "status-p2";\np2.classList.add("lead");\np2.innerHTML = "' + level_val + '";\ndiv.appendChild(p2);\n\nvar hr4 = document.createElement("HR");\nhr4.id = "status-hr4";\nhr4.classList.add("my-4");\ndiv.appendChild(hr4);\n\nvar hr5 = document.createElement("HR");\nhr5.id = "status-hr5";\nhr5.classList.add("my-4");\ndiv.appendChild(hr5);\n\nvar p3 = document.createElement("P");\np3.id = "status-p3";\np3.classList.add("lead");\np3.style = "color: #737373;";\np3.innerHTML = "' + document.getElementById("status").value + '";\ndiv.appendChild(p3);\n\nvar hr6 = document.createElement("HR");\nhr6.id = "status-hr6";\nhr6.classList.add("my-4");\ndiv.appendChild(hr6);';
   	popup.style.display = "block";
+		wait(3000);
+		closePopup();
   }
 </script>
