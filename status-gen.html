@@ -17,6 +17,9 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="style.css" rel="stylesheet">
 	  <script type="text/javascript" src="https://everyone-ide.github.io/script.js"></script>
+	  <link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
   </head>
   <body>
 
@@ -73,7 +76,7 @@
 							<button type="button" class="btn btn-primary btn-lg" onclick="generateStatus();">Generate</button>
 							<button type="button" class="btn btn-primary btn-lg" onclick="copyCode();">Copy</button>
           </form>
-          <textarea rows="63" cols="75" id="generated" readonly>
+          <textarea rows="63" cols="75" id="generated" class="language-css" readonly>
 Your code will be generated right here.
           </textarea>
         </div>
