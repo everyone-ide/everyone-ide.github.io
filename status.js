@@ -8,8 +8,8 @@ div.appendChild(hr);
 var i = document.createElement("I");
 i.id = "status-i";
 i.classList.add("fas");
-i.classList.add("fa-ban");
-i.style = "width: 50px; height: 50px; color: red;";
+i.classList.add("fa-plus");
+i.style = "width: 50px; height: 50px; color: lime;";
 div.appendChild(i);
 
 // fas fa-ban - No status available. - red
@@ -22,7 +22,7 @@ div.appendChild(i);
 var p = document.createElement("P");
 p.id = "status-p";
 p.classList.add("lead");
-p.innerHTML = "No status available.";
+p.innerHTML = "Adding new feature.";
 div.appendChild(p);
 
 var hr2 = document.createElement("HR");
@@ -55,7 +55,7 @@ var p3 = document.createElement("P");
 p3.id = "status-p3";
 p3.classList.add("lead");
 p3.style = "color: #737373;";
-p3.innerHTML = "Both developers doing nothing.";
+p3.innerHTML = "The CEO is adding being able to delete projects in the software";
 div.appendChild(p3);
 
 var hr6 = document.createElement("HR");
