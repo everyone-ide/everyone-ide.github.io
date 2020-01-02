@@ -55,7 +55,7 @@ var p3 = document.createElement("P");
 p3.id = "status-p3";
 p3.classList.add("lead");
 p3.style = "color: #737373;";
-p3.innerHTML = "The CEO is adding being able to delete projects in the software";
+p3.innerHTML = "The CEO is making the editor function in the software";
 div.appendChild(p3);
 
 var hr6 = document.createElement("HR");
